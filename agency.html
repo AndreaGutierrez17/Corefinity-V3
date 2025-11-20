@@ -54,14 +54,15 @@
           </li>
 
           <!-- MEGA MENU -->
-          <a href="#"
-   class="nav-link dropdown-toggle"
-   id="resourcesDropdown"
-   role="button"
-   data-bs-toggle="dropdown"
-   aria-expanded="false">
-  Resources
-</a>
+<li class="nav-item dropdown dropdown-mega position-static">
+  <a href="#"
+     class="nav-link dropdown-toggle"
+     id="resourcesDropdown"
+     role="button"
+     data-bs-toggle="dropdown"
+     aria-expanded="false">
+    Resources
+  </a>
 
             <div class="dropdown-menu cf-mega-menu" aria-labelledby="resourcesDropdown">
               <div class="row g-4">
@@ -827,26 +828,54 @@
   </div>
 </section>
 
-<!-- Título con span azul -->
+<!-- SUPPORT DOCS CTA -->
+<section class="cf-section">
+  <div class="container">
+    <div class="cf-support-cta d-lg-flex align-items-center justify-content-between gap-4">
+      <div>
+        <p class="cf-eyebrow-small mb-1">Need Technical Details?</p>
+        <h3 class="cf-support-title mb-2">
+          Deep-dive into our Support Docs
+        </h3>
+        <p class="mb-0 cf-support-text">
+          Explore our full support documentation with guides, runbooks and escalation procedures.
+          Everything you need to understand how Corefinity operates behind the scenes.
+        </p>
+      </div>
+
+      <div class="mt-3 mt-lg-0 text-lg-end">
+        <a href="/support-docs.html" class="cf-btn cf-btn-soft-primary">
+          View Support Docs
+          <i class="bi bi-arrow-right-short"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQS – SECCIÓN SEPARADA -->
+<section id="faqs-section" class="cf-section cf-faq-section cf-bg-gradient-clean">
+  <div class="container">
+
+    <!-- Título con span azul -->
     <h2 class="cf-title text-center mb-5">
       FA<span>Qs</span>
     </h2>
 
     <!-- FAQs -->
     <div class="cf-faqs-wrapper" id="faqs">
-
       <div class="accordion" id="magentoFaq">
 
         <!-- FAQ 1 -->
         <div class="accordion-item">
           <h2 class="accordion-header" id="faqOneHeading">
             <button class="accordion-button" type="button" data-bs-toggle="collapse"
-              data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
+                    data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
               How quickly can we get live on Corefinity?
             </button>
           </h2>
           <div id="faqOne" class="accordion-collapse collapse show"
-            aria-labelledby="faqOneHeading" data-bs-parent="#magentoFaq">
+               aria-labelledby="faqOneHeading" data-bs-parent="#magentoFaq">
             <div class="accordion-body">
               Most standard Magento migrations go live within a few weeks depending on
               complexity, testing windows and your team’s availability.
@@ -858,12 +887,12 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="faqTwoHeading">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+                    data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
               Do you offer a trial or proof of concept?
             </button>
           </h2>
           <div id="faqTwo" class="accordion-collapse collapse"
-            aria-labelledby="faqTwoHeading" data-bs-parent="#magentoFaq">
+               aria-labelledby="faqTwoHeading" data-bs-parent="#magentoFaq">
             <div class="accordion-body">
               Yes – we can spin up a staging environment to benchmark performance
               against your current stack before you commit.
@@ -875,12 +904,12 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="faqThreeHeading">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+                    data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
               Can you support multi-store and international setups?
             </button>
           </h2>
           <div id="faqThree" class="accordion-collapse collapse"
-            aria-labelledby="faqThreeHeading" data-bs-parent="#magentoFaq">
+               aria-labelledby="faqThreeHeading" data-bs-parent="#magentoFaq">
             <div class="accordion-body">
               Absolutely. Many of our customers run complex multi-store environments with
               localised catalogues, currencies and payment options.
@@ -892,12 +921,12 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="faqFourHeading">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">
+                    data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">
               Do you offer reseller or agency programmes?
             </button>
           </h2>
           <div id="faqFour" class="accordion-collapse collapse"
-            aria-labelledby="faqFourHeading" data-bs-parent="#magentoFaq">
+               aria-labelledby="faqFourHeading" data-bs-parent="#magentoFaq">
             <div class="accordion-body">
               Yes, we work closely with agencies and solution partners. Talk to us about
               partner pricing and joint go-to-market options.
@@ -910,6 +939,7 @@
 
   </div>
 </section>
+
 
 </main>
 
