@@ -1980,13 +1980,39 @@ table.cf-table {
   flex: 0 0 100%;
 }
 
-/* Mega menu responsive – el menú debe poder hacer scroll */
+/* ========= FIXES RESPONSIVE ADICIONALES (NO CAMBIAN ESTILO VISUAL) ========= */
+
+/* Evitar scroll horizontal global por desbordes mínimos */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Mantener flechas de carrusel dentro del contenedor en pantallas pequeñas */
+@media (max-width: 767.98px) {
+  .cf-carousel-arrow.left {
+    left: 0.5rem;
+  }
+  .cf-carousel-arrow.right {
+    right: 0.5rem;
+  }
+}
+
+/* Mega menú: en móvil se integra al flujo y permite scroll completo sin cortar la última tarjeta */
 @media (max-width: 991.98px) {
-  .cf-mega-menu {
-    position: static !important;
-    max-height: calc(100vh - 80px);
-    overflow-y: auto;
+  .dropdown-mega.position-static {
+    position: static;
+  }
+
+  .dropdown-menu.cf-mega-menu {
+    position: static;
+    left: auto;
+    right: auto;
+    transform: none;
     width: 100%;
-    border-radius: 0;
+    max-width: 100%;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    margin-top: 0.75rem;
   }
 }
